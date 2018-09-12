@@ -14,7 +14,7 @@ unless using_system_libraries?
   message "Using mini_portile version #{MiniPortile::VERSION}\n"
 
   recipe = MiniPortile.new('jsonnet', 'v0.9.4')
-  recipe.files = ['https://github.com/google/jsonnet/archive/v0.9.4.tar.gz']
+  recipe.files = ['https://s3.amazonaws.com/salsify-pkg/v0.9.4.tar.gz']
   class << recipe
 
     def compile
